@@ -70,6 +70,8 @@ jobs:
           bundler-cache: true
           cache-version: ${{ inputs.cache-version }}
           working-directory: ${{ inputs.working-directory }}
+      - name: Run help
+        run: bundle exec rake --tasks 
       - name: Run static validations
         run: bundle exec rake validate lint check
       - name: Run rake rubocop
