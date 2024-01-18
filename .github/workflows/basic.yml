@@ -48,7 +48,7 @@ jobs:
       - name: install additional packages
         if: ${{ inputs.additional_packages != '' }}
         run: sudo apt-get install -y ${{ inputs.additional_packages }}
-      - name: Setup ruby
+      - name: Setup ruuuuuuby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
